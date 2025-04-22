@@ -17,12 +17,12 @@ public class Bomb extends Actor
         if(isTouching(ClarkKent.class))
         {
             Skull skull = new Skull();
-            getWorld().addoObject(skull,300,200)
-            getWOrld().removeObject(this); 
+            getWorld().addObject(skull,300,200);
+            getWorld().removeObject(this); 
         }
     }
     
-    public void resetBomb)(){
+    public void resetBomb(){
         int num = Greenfoot.getRandomNumber(2);
         if(num == 0)
         {
@@ -30,7 +30,7 @@ public class Bomb extends Actor
         }
         else
         {
-            set  setLocation(600,300);
+            setLocation(600,300);
         }
        
     }
